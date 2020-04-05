@@ -1,18 +1,24 @@
 package _06_duck;
 
-public class duck {
+import javax.swing.JOptionPane;
 
+public class duck {
+int numberOfFriends;
+String favoriteFood;
 public void Duck(String favoriteFood, int numberOfFriends) {
   	this.favoriteFood = favoriteFood;
   	this.numberOfFriends = numberOfFriends;
-}//end duck
+}//end Duck
 
-public void favoriteFood ( ) {
-	
-}//end favorite food
+void quack() {
+	JOptionPane.showMessageDialog(null, "quack!! I want " + favoriteFood);
+}// end quack
 
-public void numberOfFriends() {
-	
-}//end number of friends
+void waddle() {
+	JOptionPane.showMessageDialog(null, "waddle waddle waddle lets go on a walk with your" + numberOfFriends + "friends!");
+}//end waddle
 
-}
+
+}//end class duck
+
+
